@@ -6,9 +6,16 @@ require('dotenv').config();
 
 
 const myPOSTGRES_URL = process.env.DATABASE_URL;
-// let sequelizeOptions =  {}
+let sequelizeOptions =  {
+    dialectOptions: {
+      ssl: {
+        require: true,
+        rejectUnauthorized: false,
+      }
+    }
+  }
 
-  let sequelize = new Sequelize(myPOSTGRES_URL,{});
+  let sequelize = new Sequelize(myPOSTGRES_URL,sequelizeOptions);
 
 
   module.exports = {
