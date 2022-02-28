@@ -16,5 +16,6 @@ api server for data base handling
 * the last step was testing(which supposed to be written before the code itself) i tested the 404 status for bad route and method.
  Also tested each router with all it's methods.
  
- [heroku App link](https://ibrahim-class03-app.herokuapp.com)
- [pull request link](https://github.com/ibrahimalaqoul/basic-api-server/pull/4)
+ # links
+ * [heroku App link](https://ibrahim-class03-app.herokuapp.com)
+ * [pull request link](https://github.com/ibrahimalaqoul/basic-api-server/pull/4)
