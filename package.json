@@ -4,8 +4,9 @@
   "description": "api server for data base handling",
   "main": "index.js",
   "scripts": {
-    "test": "jest --coverage --verbose",
-    "start": "node index.js"
+    "start": "NODE_ENV=production node index.js",
+    "test": "NODE_ENV=test jest --coverage --verbose"
+    
   },
   "repository": {
     "type": "git",
@@ -24,7 +25,8 @@
     "express": "^4.17.3",
     "pg": "^8.7.3",
     "psql": "^0.0.1",
-    "sequelize": "^6.17.0"
+    "sequelize": "^6.17.0",
+    "sqlite3": "^5.0.2"
   },
   "devDependencies": {
     "jest": "^27.5.1",
